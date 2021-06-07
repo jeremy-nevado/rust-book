@@ -1,0 +1,1 @@
+/Users/jeremynevado/Coding/rust-book/2-attempt/traits/target/debug/traits: /Users/jeremynevado/Coding/rust-book/2-attempt/traits/src/lib.rs /Users/jeremynevado/Coding/rust-book/2-attempt/traits/src/main.rs

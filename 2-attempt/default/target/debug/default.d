@@ -1,0 +1,1 @@
+/Users/jeremynevado/Coding/rust-book/2-attempt/default/target/debug/default: /Users/jeremynevado/Coding/rust-book/2-attempt/default/src/lib.rs /Users/jeremynevado/Coding/rust-book/2-attempt/default/src/main.rs
