@@ -9,3 +9,8 @@ mod tests {
         }
     }
 }
+
+pub fn testing(i: 32) {
+    println!("Testing some things, {}", i);
+}
+
