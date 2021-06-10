@@ -1,1 +1,1 @@
-/Users/jeremynevado/Coding/rust-book/2-attempt/12-grep/minigrep/target/debug/minigrep: /Users/jeremynevado/Coding/rust-book/2-attempt/12-grep/minigrep/src/lib.rs /Users/jeremynevado/Coding/rust-book/2-attempt/12-grep/minigrep/src/main.rs
+/home/jeremy/Coding/rust-book/2-attempt/12-grep/minigrep/target/debug/minigrep: /home/jeremy/Coding/rust-book/2-attempt/12-grep/minigrep/src/lib.rs /home/jeremy/Coding/rust-book/2-attempt/12-grep/minigrep/src/main.rs
