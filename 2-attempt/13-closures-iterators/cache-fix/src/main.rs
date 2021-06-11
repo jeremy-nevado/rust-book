@@ -28,7 +28,7 @@ fn generate_workout(intensity: u32, random_number: u32) {
 
 struct Cacher<T, K, V>
 where
-    T: Fn(K) -> V,
+    T: Fn<K>(K) -> V,
 {
     calculation: T,
     value: HashMap<K, V>,

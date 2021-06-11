@@ -1,0 +1,1 @@
+/Users/jeremynevado/Coding/rust-book/2-attempt/13-closures-iterators/iterators/target/debug/iterators: /Users/jeremynevado/Coding/rust-book/2-attempt/13-closures-iterators/iterators/src/lib.rs /Users/jeremynevado/Coding/rust-book/2-attempt/13-closures-iterators/iterators/src/main.rs
