@@ -73,6 +73,12 @@ impl Config {
 
         let case_sensitive = env::var("CASE_INSENSITIVE").is_err();
 
+        // Alternate implementation for case_sensitive
+        // let case_sensitive = match args.get(3) {
+        //      Some(_) => true,
+        //      None => false,
+        // }
+
         Ok(Config {
             query,
             filename,
