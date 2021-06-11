@@ -1,0 +1,1 @@
+/Users/jeremynevado/Coding/rust-book/2-attempt/13-closures-iterators/minigrep/target/debug/minigrep: /Users/jeremynevado/Coding/rust-book/2-attempt/13-closures-iterators/minigrep/src/lib.rs /Users/jeremynevado/Coding/rust-book/2-attempt/13-closures-iterators/minigrep/src/main.rs
