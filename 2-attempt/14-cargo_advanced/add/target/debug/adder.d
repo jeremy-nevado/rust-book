@@ -1,0 +1,1 @@
+/Users/jeremynevado/Coding/rust-book/2-attempt/14-cargo_advanced/add/target/debug/adder: /Users/jeremynevado/Coding/rust-book/2-attempt/14-cargo_advanced/add/add-one/src/lib.rs /Users/jeremynevado/Coding/rust-book/2-attempt/14-cargo_advanced/add/adder/src/main.rs
