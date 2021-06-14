@@ -1,18 +1,40 @@
 use crate::List::{Cons, Nil};
+use std::cell::RefCell;
 use std::rc::Rc;
 
-enum List<T> {
-    Cons(T, Rc<List<T>>),
+#[derive(Debug)]
+enum List {
+    Cons(i32, RefCell<Rc<List>>),
     Nil,
 }
-fn main() {
-    let a = Rc::new(Cons(5, Rc::new(Cons(10, Rc::new(Nil)))));
-    println!("count after creating a = {}", Rc::strong_count(&a));
-    let b = Cons(3, Rc::clone(&a));
-    println!("count after creating b = {}", Rc::strong_count(&a));
-    {
-        let c = Cons(4, Rc::clone(&a));
-        println!("count after creating c = {}", Rc::strong_count(&a));
+impl List {
+    fn tail(&self) -> Option<&RefCell<Rc<List>>> {
+        match self {
+            Cons(_, item) => Some(item),
+            Nil => None,
+        }
     }
-    println!("count after c goes out of scope = {}", Rc::strong_count(&a));
+}
+fn main() {
+    let a = Rc::new(Cons(5, RefCell::new(Rc::new(Nil))));
+
+    println!("a initial rc count = {}", Rc::strong_count(&a));
+    println!("a next item = {:?}", a.tail());
+
+    let b = Rc::new(Cons(10, RefCell::new(Rc::clone(&a))));
+
+    println!("a rc count after b creation = {}", Rc::strong_count(&a));
+    println!("b inital rc count = {}", Rc::strong_count(b));
+    println!("a next item = {:?}", b.tail());
+
+    if let Some(link) = a.tail() {
+        *link.borrow_mut() = Rc::clone(&b);
+    }
+
+    println!("b rc count after chagning a = {}", Rc::strong_count(&b));
+    println!("a rc count after chagning a = {}", Rc::strong_count(&a));
+
+    //Ucomment the next line to see that we have a cycle;
+    // it will overflow the stack
+    // println!("a next item = {:?}" a.tail());
 }
