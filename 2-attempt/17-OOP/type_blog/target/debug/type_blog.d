@@ -1,0 +1,1 @@
+/Users/jeremynevado/Coding/rust-book/2-attempt/17-OOP/type_blog/target/debug/type_blog: /Users/jeremynevado/Coding/rust-book/2-attempt/17-OOP/type_blog/src/lib.rs /Users/jeremynevado/Coding/rust-book/2-attempt/17-OOP/type_blog/src/main.rs
