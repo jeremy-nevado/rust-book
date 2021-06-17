@@ -1,0 +1,37 @@
+pub struct Post {
+    text: String,
+    approved: bool,
+    reviewable: bool,
+}
+
+impl Post {
+    pub fn new() -> Post {
+        Post {
+            text: String::from(""),
+            approved: false,
+            reviewable: false,
+        }
+    }
+
+    pub fn add_text(&mut self, s: &str) {
+        if !reviewable {
+        self.text = String::from(s);
+        }
+    }
+
+    pub fn request_review(&mut self) {
+        self.reviewable = true;
+    }
+
+    pub fn content(&self) -> &str {
+        if self.approved {
+            &self.text
+        } else {
+            ""
+        }
+    }
+
+    pub fn approve(&mut self) {
+        self.approved = true
+    }
+}
